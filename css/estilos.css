@@ -1,0 +1,358 @@
+/*ESTILOS GENERALES*/
+body {
+  font-family: 'Exo', sans-serif;
+  text-transform: uppercase; }
+
+h1 {
+  text-align: center; }
+
+/*TRANSFORMACION*/
+.transformacionImagenes:hover {
+  transform: scale(1.1, 1.1);
+  transition: 1s; }
+
+/*VARIABLES*/
+/*INICIO*/
+/*CAROUSEL*/
+/*pc*/
+@media (min-width: 1024px) {
+  .carouselFlex {
+    display: flex;
+    justify-content: center; }
+  .divCarrousel {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center; } }
+
+/*PRODUCTOS INICIO*/
+.productosInicio {
+  margin: 15px;
+  width: 90%; }
+
+/*tablet*/
+@media (min-width: 600px) {
+  .divProductosInicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center; }
+  .productosInicio {
+    margin: 10px;
+    height: 280px;
+    width: 280px; } }
+
+/*pc*/
+@media (min-width: 1024px) {
+  .divProductosInicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 120px; }
+  .productosInicio {
+    margin: 10px;
+    height: 300px;
+    width: 300px; } }
+
+/*PRODUCTOS*/
+/*GRID PRODUCTOS*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 14fr;
+  justify-items: center; }
+
+.producto__nombre {
+  text-align: center; }
+
+.producto__precio {
+  text-align: center; }
+
+/*GRID PRODUCTOS TABLET*/
+@media (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 7fr;
+    justify-items: center; }
+  .producto__nombre {
+    text-align: center; }
+  .producto__precio {
+    text-align: center; } }
+
+/* GRID PRODUCTOS PC*/
+/*PRODUCTOS*/
+@media (min-width: 1024px) {
+  .transformacionProductos:hover {
+    transform: scale(1.1, 1);
+    transition: 1s; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2rem; }
+  /** Productos **/
+  .contenedor {
+    margin-left: 20%;
+    margin-right: 29%; }
+  .producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .producto__nombre {
+    text-align: center; }
+  .producto__precio {
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2; }
+  .productosFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .cajaflex {
+    margin: 30px;
+    padding: 40px;
+    height: 500px; } }
+
+/*PAGINA OFERTAS*/
+@media (min-width: 1024px) {
+  .margen {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px; }
+  .texto {
+    font-size: 20px; } }
+
+/*NOSOTROS*/
+.quienesSomosCaja {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+  height: 50%;
+  padding: 20px; }
+
+.misionVisioCaja {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+  padding: 20px; }
+
+/*NOSOTROS TABLET*/
+@media (min-width: 600px) {
+  .quienesSomos {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .quienesSomosCaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    height: 30%;
+    margin-top: 200px; }
+  .nosotrosCaja {
+    height: 300px;
+    width: 300px; }
+  .misionVision {
+    display: flex;
+    justify-content: center; }
+  .misionVisioCaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    height: 30%; } }
+
+@media (max-width: 1023px) {
+  .gradienteNosotros {
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); } }
+
+/*NOSOTROS PC*/
+@media (min-width: 1024px) {
+  .quienesSomos {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../img/9878062704_9_3_1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; }
+  .quienesSomosCaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    height: 400px;
+    width: 600px;
+    margin: 200px; }
+  .nosotrosCaja {
+    height: 300px;
+    width: 300px; }
+  .misionVision {
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(../img/1058626803_9_3_1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; }
+  .misionVisioCaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    height: 400px;
+    width: 600px;
+    margin: 200px; } }
+
+/*CONTACTO*/
+.mainContacto {
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); }
+
+.claseForm {
+  margin: 10px;
+  display: flex;
+  flex-direction: column; }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contactoItem {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/*CONTACTO TABLET*/
+@media (min-width: 600px) {
+  .contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px; }
+  .claseForm {
+    padding: 50px; } }
+
+/*CONTACTO PC*/
+@media (min-width: 1024px) {
+  .mainContacto {
+    background-image: url(https://static.zara.net/photos///2021/S/0/1/p/7008/769/704/505/w/1229/7008769704_9_3_1.jpg?ts=1623686585554);
+    background-repeat: no-repeat;
+    background-position: center; }
+  .contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    padding: 50px; }
+  .contactoItem {
+    color: aliceblue;
+    padding-right: 20px;
+    padding-left: 20px; }
+  .claseForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-right: 35%; } }
+
+/*ENVIOS*/
+.gradiente {
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); }
+
+.mainEnvios {
+  height: 80vh; }
+
+.cajaModoEnvio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px; }
+
+.cajaEnvioGratis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%; }
+
+/*ENVIOS TABLET*/
+@media (min-width: 600px) {
+  .modoDeEnvio {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .cajaModoEnvio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    height: 300px;
+    width: 300px;
+    margin-top: 150px; }
+  .envioGratis {
+    display: flex;
+    justify-content: center; }
+  .cajaEnvioGratis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    height: 300px;
+    width: 300px; } }
+
+/*ENVIOS PC*/
+@media (min-width: 1024px) {
+  .mainEnvios {
+    background-image: url(https://static.zara.net/photos///2021/W/0/1/p/3471/804/712/510/w/1229/3471804712_9_50_1.jpg?ts=1611087920312);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "envio" "gratis"; }
+  .modoDeEnvio {
+    grid-area: envio;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .envioGratis {
+    grid-area: gratis;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .cajaModoEnvio {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px; }
+  .cajaEnvioGratis {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    height: 300px;
+    width: 400px;
+    margin-left: 200px;
+    margin-right: 200px; } }

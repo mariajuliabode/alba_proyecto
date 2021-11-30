@@ -1,0 +1,111 @@
+/*ENVIOS*/
+.gradiente{
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+.mainEnvios{
+    height: 80vh;
+}
+
+.cajaModoEnvio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+}
+.cajaEnvioGratis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;   
+}
+/*ENVIOS TABLET*/
+@media (min-width: 600px) {
+    .modoDeEnvio{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    .cajaModoEnvio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        height: 300px;
+        width: 300px;
+        margin-top: 150px;
+        
+    }
+    .envioGratis{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .cajaEnvioGratis{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        height: 300px;
+        width: 300px;  
+    }
+}
+/*ENVIOS PC*/
+@media (min-width: 1024px) {
+
+.mainEnvios{
+    background-image: url(https://static.zara.net/photos///2021/W/0/1/p/3471/804/712/510/w/1229/3471804712_9_50_1.jpg?ts=1611087920312);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "envio"
+    "gratis";
+    
+}
+
+.modoDeEnvio{
+    grid-area: envio;
+    height: 40vh;  
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+.envioGratis{
+    grid-area: gratis;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+.cajaModoEnvio{
+    display:flex;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.cajaEnvioGratis{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    height: 300px;
+    width:400px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+}

@@ -1,0 +1,17 @@
+/*ESTILOS GENERALES*/
+body{
+    font-family: 'Exo', sans-serif;
+    text-transform: uppercase;
+}
+h1{
+    text-align: center;
+}
+
+    /*TRANSFORMACION*/
+.transformacionImagenes:hover{
+    transform: scale(1.1, 1.1);
+    transition: 1s;
+}
+/*VARIABLES*/
+$tamaño-letra: 20px;
+

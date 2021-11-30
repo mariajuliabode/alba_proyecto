@@ -1,0 +1,61 @@
+/*CONTACTO*/
+.mainContacto{
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+.claseForm{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactoItem{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*CONTACTO TABLET*/
+@media (min-width: 600px) {
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 50px;
+}
+    .claseForm{
+        padding: 50px;
+    }
+}
+/*CONTACTO PC*/
+@media (min-width: 1024px) {
+    .mainContacto{
+        background-image: url(https://static.zara.net/photos///2021/S/0/1/p/7008/769/704/505/w/1229/7008769704_9_3_1.jpg?ts=1623686585554);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: $tamaño-letra;
+        padding: 50px;
+    }
+    .contactoItem{
+        color: aliceblue;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .claseForm{
+        
+        display: flex;
+        flex-direction: column;
+        margin-left:35%;
+        margin-right:35%;
+        
+    }
+}

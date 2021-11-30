@@ -1,0 +1,78 @@
+/*PRODUCTOS*/
+/*GRID PRODUCTOS*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 14 *(1fr);
+    justify-items: center;
+}
+.producto__nombre{
+    text-align: center;
+}
+.producto__precio {
+    text-align: center;
+}
+/*GRID PRODUCTOS TABLET*/
+@media (min-width: 600px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 7 *(1fr);
+        justify-items: center;
+    }
+    .producto__nombre{
+        text-align: center;
+    }
+    .producto__precio {
+        text-align: center;
+    }
+}
+/* GRID PRODUCTOS PC*/
+/*PRODUCTOS*/
+@media (min-width: 1024px) {
+.transformacionProductos:hover{
+    transform: scale(1.1, 1);
+    transition: 1s;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+/** Productos **/
+.contenedor{
+margin-left: 20%;
+margin-right: 29%;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.producto__nombre{
+    text-align: center;
+}
+
+.producto__precio {
+    
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.productosFlex{
+    
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.cajaflex{
+    margin:30px;
+    padding: 40px;
+    height: 500px;
+}
+}
